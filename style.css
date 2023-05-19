@@ -166,7 +166,7 @@ main.cards section.card {
 .sobre{
     padding-top: 40px;
     padding-bottom: 20px;
-    background-color: #08203d;
+    background-color: #203288;
     display: flex;
     justify-content: space-between;
     
@@ -222,7 +222,7 @@ main.cards section.card {
     padding: 0px;
   }
 footer {
-    background-color: #29292e;
+    background-color: #203288;
     padding: 10px;
   }
   
