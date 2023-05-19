@@ -123,7 +123,7 @@ nav a:hover {
 .contact-info .esquerda{
     width: 50%;
     padding: 30px;
-    background-color: #4f9cf9;
+    background-color: #203288;
     border-radius: 14px;
     margin: 50px;
     height: fit-content;
@@ -176,7 +176,7 @@ nav a:hover {
     padding: 15px;
     border-radius: 10px;
     border: none;
-    background-color: #4f9cf9;
+    background-color: #203288;
     color: white;
     cursor: pointer;
 }
@@ -184,61 +184,9 @@ nav a:hover {
 /*____________________________________*/
 /*____________________________________*/
 footer {
-    background-color: #29292e;
+    background-color: #203288;
     padding: 10px;
-  }
-  
-  .parceiros {
-    display: flex;
-    justify-content: space-between;
-  }
-  .parceiros .apoio{
-    width: 50%;
-    text-align: center;
-    padding: 30px 0px 0px 80px;
-    height: fit-content;
-}
-  /*.parceiros  .org{
-    margin: auto;
-    background-color: #1a7ac9;
-    text-align: center;
-    width: 200px;
-    height: 90px;
-    border-radius: 50% / 50%;
-    font-size: 10px;
-  }*/
-.parceiros .org h1 {
-	font-size: 30px;
-    padding-top: 10px;
-    margin: 0px 0px 0px 0px;
-    color: white;
-}
-.parceiros .org h2 {
-	font-size: 15px;
-    margin: 0px 0px 0px 0px;
-    color: white;
-}
-.parceiros .apoio p{
-	font-size: 14px;
-}
-  
-.parceiros .org p {
-	font-size: 14px;
-	margin: 0px 0px 0px 0px;
-    color: white;
-}
-  
-  .parceiros img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .informacoes {
-    text-align: center;
-    font-size: 14px;
-    color: #888;
-  }
-  
+  }  
 /*____________________________________*/
 
 @media (max-width: 767px) {
