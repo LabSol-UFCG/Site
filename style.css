@@ -233,6 +233,7 @@ main.cards section.card {
 #Parceiros .parceiros {
     display: flex;
     justify-content: space-between;
+    padding-bottom:10px;
 }
 #Parceiros .parceiros .uaem img{
  
