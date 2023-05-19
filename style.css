@@ -221,16 +221,8 @@ main.cards section.card {
     background: linear-gradient(to bottom, #7e7e7e, #404047, #37373f, #29292e);
     padding: 0px;
   }
-footer {
-    background-color: #203288;
-    padding: 10px;
-  }
-footer p {
-    text-align: center;
-    font-family: 'Courier New';
-    font-size: 25px;
-    padding: 10px 0px 50px 0px;
-    margin: 0px 0px 0px 0px;
+#parceiros {
+    background-color: white;
 }
 #Parceiros h1{
     text-align: center;
@@ -267,8 +259,16 @@ footer p {
     width: 180px;
     height: 80px;
 }
-
-  
+footer {
+    background-color: #203288;
+    padding: 10px;
+  }
+footer p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0px 30px 0px;
+    margin: 0px 0px 0px 0px;
+}  
 /*____________________________________*/
 
 @media (max-width: 767px) {
