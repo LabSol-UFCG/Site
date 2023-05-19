@@ -223,6 +223,7 @@ main.cards section.card {
   }
 #parceiros {
     padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     background-color: white;
 }
