@@ -228,37 +228,42 @@ footer {
 footer p {
     text-align: center;
     font-family: 'Courier New';
-	font-size: 25px;
+    font-size: 25px;
     padding: 10px 0px 50px 0px;
     margin: 0px 0px 0px 0px;
-} 
-.parceiros {
+}
+#Parceiros h1{
+    text-align: center;
+}
+#Parceiros .parceiros {
     display: flex;
     justify-content: space-between;
 }
-.parceiros .uaem img{
+#Parceiros .parceiros .uaem img{
  
     width: 180px;
     height: 80px;
 }
-.parceiros .lvi img{
+#Parceiros .parceiros .lvi img{
 
     width: 180px;
     height: 90px;
 }
-.parceiros .soldamat img{
+#Parceiros .parceiros .soldamat img{
 
     width: 150px;
     height: 70px;
 }
-.parceiros .UFPE img{
+#Parceiros .parceiros .UFPE img{
     width: 60px;
     height: 100px;
-}.parceiros .cnpq img{
+}
+#Parceiros .parceiros .cnpq img{
 
     width: 165x;
     height: 65px;
-}.parceiros .fapesq img{
+}
+#Parceiros .parceiros .fapesq img{
     width: 180px;
     height: 80px;
 }
