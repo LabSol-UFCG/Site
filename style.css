@@ -314,8 +314,12 @@ footer p {
         align-items: center;
       }
     
-      .presentation-content {
-        padding: 10px;
+       .presentation-content {
+		margin-top:0px;
+		margin-bottom:0px;
+        margin-left:40px;
+		margin-right:40px;
+		padding: 10px;
         text-align: center;
       }
     }
