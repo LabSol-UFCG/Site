@@ -218,6 +218,7 @@ main.cards section.card {
 #Parceiros .parceiros {
     display: flex;
     justify-content: space-between;
+    flex-wrap:wrap;/*quebra a linha quando não cabe o elemento*/
     padding-bottom:10px;
 }
 #Parceiros .parceiros .uaem img{
