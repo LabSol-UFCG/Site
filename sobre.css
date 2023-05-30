@@ -93,7 +93,7 @@ section.slider{
 .nav-manual .manual-btn:hover{
     background-color: #08203d;
 }
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
     background-color: #08203d;
 }
 #radio1:checked ~ .primeiro{
@@ -104,6 +104,9 @@ section.slider{
 }
 #radio3:checked ~ .primeiro{
     margin-left: -50%;
+}
+#radio4:checked ~ .primeiro{
+    margin-left: -75%;
 }
 /*____________________________________*/
 /*____________________________________*/
@@ -146,7 +149,6 @@ section.slider{
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    background-color: white;
 }
 #Parceiros h1{
     text-align: center;
@@ -154,6 +156,8 @@ section.slider{
 #Parceiros .parceiros {
     display: flex;
     justify-content: space-between;
+    /*flex-direction: column; direciona o flex para coluna*/
+    flex-wrap:wrap;/*quebra a linha quando não cabe o elemento*/
     padding-bottom:10px;
 }
 #Parceiros .parceiros .uaem img{
@@ -194,7 +198,8 @@ footer p {
     padding: 10px 0px 30px 0px;
     margin: 0px 0px 0px 0px;
     color: white;
-}  
+}
+
 /*____________________________________*/
 
 @media (max-width: 767px) {
@@ -235,6 +240,7 @@ footer p {
 		padding: 10px;
         text-align: center;
       }
+      
     }
 
 @media screen and (max-width: 900px) {
@@ -247,4 +253,12 @@ footer p {
     .nav-auto, .nav-manual{
         margin-top: 60%;
     }
+    .slider-box img{
+        width: 100%;
+    }
+    /*#Parceiros .parceiros {
+        display:block;
+        text-align: center;
+        padding-bottom:10px;
+    }*/
 }
