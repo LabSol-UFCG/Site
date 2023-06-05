@@ -20,6 +20,9 @@ header {
 	color: #fff;
 	padding: 2px;
 }
+a {
+	text-decoration: none;
+}
 
 /*____________________________________*/
 
