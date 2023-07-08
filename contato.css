@@ -67,18 +67,9 @@ nav a:hover {
 }
 
 #banner h1 {
-	font-size: 60px;
-    padding-top: 20px;
+    font-size: 80px;
+    padding-top: 40px;
     margin: 0px 0px 0px 0px;
-}
-#banner h2 {
-	font-size: 25px;
-    margin: 0px 0px 0px 0px;
-}
-
-#banner p {
-	font-size: 24px;
-	margin: 0px 0px 0px 0px;
 }
 
 #banner button {
@@ -93,10 +84,8 @@ nav a:hover {
 }
 
 #banner button:hover {
-	background-color: #daa508;;
+	background-color: #f6b900e5;
 }
-
-/*____________________________________*/
 /*____________________________________*/
 .conteiner {
  	margin:10px;
