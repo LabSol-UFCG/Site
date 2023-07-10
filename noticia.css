@@ -70,6 +70,7 @@ nav a:hover {
 }
 
 #banner p {
+	text-align: justify;
 	color:black;
 	font-size: 24px;
 	margin: 0px 0px 0px 0px;
