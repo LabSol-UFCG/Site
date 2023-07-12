@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="ISO-8859-1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <title>Seção de Notícias</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<link rel="stylesheet" href="noticia.css">
+<title>Apresentação de Figura e Texto</title>
+<style>
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.image {
+  grid-column: 1 / 2;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text p {
+  text-align: justify;
+}
+</style>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="labsol.html">Home</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section id="banner">
-	<img src="folder-seleção.png" alt="Seleção LabSol (UFCG) 2023.1">
-	<h1> LabSol abre seleção para vagas de membros permanentes </h1>
-		<p> O Laboratório de Soldagem (LbSol) publicou o edital para para preenchimento de 2 vagas para memmbros permanentes, por meio de um Processo Seletivo. </p>
-		<p> Para candidatar-se é preciso preencher os seguintes requisitos: ser graduando em engenharia mecânica, na UFCG (Universidade Federal de Campina Grande), e preencher o formulário online disponibilizado. O período de inscrição vai de 7 a 17 de julho. O resultado final será divulgado até o dia 27 de julho, e o início das atividades está marcado para o dia 1 de agosto. </p>
-		<p> Acesse o edital de Seleção na íntegra através do link: https://drive.google.com/file/d/1mPPBzgFnjH5YSI8r4akJr_1htmak1ktH/view?usp=sharing. </p>
-		<p> Estão sendo ofertadas 2 (duas) vagas para membros permanentes. Para se inscrever o candidato deverá: ter um e-mail válido; estar matriculado na graduação em engenharia mecânica na UFCG ; preencher o formulário completo, anexando os documentos descritos no artigo 2, item I do edital e, enviar a resposta do formulário ao final. A inscrição é feita por meio de preenchimento de formulário eletrônico, disponível neste endereço: https://forms.gle/jgu32kkCPDCLAKSN9.  </p>
+<div class="container">
+  <div class="image">
+    <img src="folder-seleção.png" alt="Descrição da Imagem">
+  </div>
+  <div class="text">
+    <h1>LabSol abre seleção para vagas de membros permanentes</h1>
+    <p>O Laboratório de Soldagem (LbSol) publicou o edital para para 
+		preenchimento de 2 vagas para memmbros permanentes, por meio de um Processo Seletivo.
+		Para candidatar-se é preciso preencher os seguintes requisitos: ser graduando em engenharia 
+		mecânica, na UFCG (Universidade Federal de Campina Grande), e preencher o formulário online 
+		disponibilizado. O período de inscrição vai de 7 a 17 de julho. O resultado final será divulgado 
+		até o dia 27 de julho, e o início das atividades está marcado para o dia 1 de agosto.</p>	
+		<p>Acesse o edital de Seleção na íntegra através do link: <a href="https://drive.google.com/file/d/1mPPBzgFnjH5YSI8r4akJr_1htmak1ktH/view?usp=sharing">Edital de seleção.</a></p>
+		<p>Estão sendo ofertadas 2 (duas) vagas para membros permanentes. Para se inscrever o candidato deverá: ter um e-mail válido; 
+		estar matriculado na graduação em engenharia mecânica na UFCG ; 
+		preencher o formulário completo, anexando os documentos descritos no artigo 2, 
+		item I do edital e, enviar a resposta do formulário ao final.</p>
+		
+		<p>A inscrição é feita por meio de preenchimento de formulário eletrônico, disponível neste endereço:
+		<a href="https://forms.gle/jgu32kkCPDCLAKSN9">Formulário de inscrição.</a>
+		</p>
 		<p> Texto por: Joyce Ingrid Venceslau de Souto - integrante do LabSol. </p>
-	</section>
-    <section class="contate-nos">
-        <div class="conteiner">
-        </div>
-    </section>
-    <footer>
-        <
-        </div>
-          <div class="informacoes">
-            <p>&copy; 2023 LabSol. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
+  </div>
+</div>
 </body>
 </html>
