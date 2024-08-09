@@ -121,7 +121,14 @@ nav a:hover {
 
 .news-section a {
   text-decoration: none;
-  color: #333;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.news-section a:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #203288;
   font-weight: bold;
 }
 
