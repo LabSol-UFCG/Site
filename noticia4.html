@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RESULTADO</title>
+<style>
+/*.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=inter:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+  --azul:#203288;
+  --amarelo:#f6b800;
+}
+
+header {
+	background-color: var(--azul);
+	color: #fff;
+	padding: 2px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav li {
+	float: right;
+}
+
+nav a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-weight: bold;
+  overflow:hidden;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover {
+	/*background-color: #ddd;*/
+	color: var(--amarelo);
+    transform: scale(1.2);
+}
+
+.container{
+  flex:1;
+  display:flex;
+  align-items: flex-start;
+  align-self: center;
+  width:80%;
+  font-size:20px;
+  padding: 20px;
+}
+
+button{
+    background-color: #f6b800;
+	color: #000;
+	font-size: 18px;
+	padding: 10px 30px;
+    margin-top: 10px;
+    border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    border:2px solid transparent;
+}
+
+button:hover{
+    transform: scale(1.2);
+    border:2px solid #f6b800;
+    background-color: #203288;
+}
+
+button:hover a{
+    color:#f6b800;
+    
+}
+
+.titulo{
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    align-self: center;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(255,255,255,0.70),rgba(255,255,255,0.70)),
+        url('./Fundo.png');
+    color:var(--azul);
+    padding:20px;
+}
+
+.titulo p{
+    color:black;
+    background-color: white;
+}
+
+.tituloartigo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul);
+    color:white;
+    padding:20px;
+}
+
+.tituloartigo h1{
+    width:70%;
+    text-align: center;
+}
+
+.image{
+    flex: 0 0 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding:0;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image h3{
+    background-color: white;
+}
+
+.image p{
+    background-color: white;
+    margin:0;
+}
+
+#nome{
+    color:var(--azul);
+    font-size: 110%;
+}
+.image img {
+  height: auto;
+  width:60%;
+}
+
+.text {
+  background-color: white;
+  flex: 0 0 70%;
+}
+
+.titulo h1{
+    width:70%;
+    text-align: center;
+    background-color: white;
+}
+
+.text h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text p {
+  text-align: justify;
+}
+
+#rodape{
+  background-color: #203288;
+  height:70px;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+#rodape p{
+  color:white;
+}
+
+body{
+  background:
+    linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)),
+    url('./Fundo.png');
+  margin:0;
+  padding:0;
+  min-height:100vh;
+  display:flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  font-family: 'Inter', sans-serif;
+}
+</style>
+</head>
+<body>
+    <!--  -->
+  <header>
+		<nav>
+			<ul>
+				<li><a href="OrdemDeServicoLabSol.docx" download="OrdemDeServicoLabSol">Reservar Maquina</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="index.html">Início</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+			</ul>
+		</nav>
+	</header>
+    <!--  -->
+    
+    <div class="titulo">
+        <h1>Membros do LabSol tem Artigos de Revistas Publicados</h1>
+        <p>Membros  do Laboratório de Soldagem (LabSol/UFCG) tiveram artigos publicados em revistas internacionais sobre os efeitos da manufatura aditiva por deposição a arco utilizando aço inoxidável 316L-Si.
+            <br>
+            > Joyce Ingrid Venceslau de Souto
+        <br>
+            > Jefferson Segundo de Lima
+        <br>
+            > Júlio Feitosa da Silva Neto</p>
+    </div>
+
+<!--  -->
+    <div class="tituloartigo">
+        <h1>Effects of contaminations on Electric Arc Behavior and Occurrence of Defects in Wire Arc Additive Manufacturing of 316L-Si Stainless Steel.</h1>
+    </div>
+<div class="container">
+    
+  <div class="image">
+    <h3>Autora:</h3>
+    <img src="joyce.jpg" alt="Descrição da Imagem">
+    <br>
+    <p id="nome">Joyce Venceslau</p>
+    <br>
+    <p>Pesquisadora</p>
+    <p>Doutorando</p>
+    <br>
+    <p>Publicado:</p>
+    <p>24/03/2024</p>
+  </div>
+
+  <div class="text">
+    <p>
+        A revista Metals, da editora  MDPI (Instituto de Publicação Digital Multidisciplinar) 
+        é uma editora de periódicos científicos de acesso aberto de alto impacto. O artigo 
+        "Effects of contaminations on Electric Arc Behavior and Occurrence of Defects in Wire 
+        Arc Additive Manufacturing of 316L-Si Stainless Steel" aborda o desenvolvimento de 
+        tecnologias em processos de fabricação, através de analises de sinais elétricos para 
+        encontrar defeitos durante o processo de manufatura aditiva a deposição de arco.
+<br><br>
+Abstract:
+<br><br>
+A Manufatura Aditiva é um processo de fabricação que consiste na obtenção de um objeto tridimensional a partir da deposição de material camada por camada, ao contrário dos métodos convencionais de fabricação subtrativa. A Manufatura Aditiva por Arco de Fio se destaca por sua alta produtividade entre as tecnologias de Manufatura Aditiva para fabricação de peças metálicas. Por outro lado, o excesso de calor inserido promove o aumento dos níveis de estresse residual e a ocorrência de defeitos, como poros, vazios, falta de fusão e delaminação. Esses defeitos resultam em anormalidades durante o processo, como distúrbios nas respostas elétricas. Portanto, o monitoramento do processo e a detecção de defeitos e falhas nos itens fabricados são de fundamental importância para garantir a qualidade do produto e certificar a alta produtividade característica desse processo. Assim, este trabalho teve como objetivo caracterizar os efeitos de diferentes contaminações no comportamento do arco elétrico do processo de Manufatura Aditiva por Arco de Fio e a ocorrência de defeitos microscópicos em paredes finas fabricadas por esse processo. Para investigar a presença de defeitos nos preformados metálicos, foram utilizadas condições experimentais para promover o aparecimento de defeitos, como a inserção de contaminantes. Para realizar a análise do comportamento do arco elétrico, dados temporais de tensão e corrente foram representados por meio de histogramas e ciclogramas, e a estabilidade do arco foi avaliada com base no índice de Vilarinho para um curto-circuito. Efetivamente, a introdução de contaminantes causou distúrbios no arco elétrico que levaram ao surgimento de defeitos de fabricação, como inclusões e porosidades, observados por meio da caracterização metalográfica. Os resultados confirmam que a introdução de contaminações poderia ser identificada precocemente no processo de Manufatura Aditiva por Arco de Fio por meio da análise de dados do arco elétrico.
+    </p>
+
+    <button ><a href="https://www.mdpi.com/2075-4701/14/3/286" target="_blank" rel="noopener noreferrer">Leia na Íntegra</a></button>
+  </div>
+
+</div>
+
+<!--  -->
+
+<!--  -->
+<div class="tituloartigo">
+    <h1>Effects of wire arc additive manufacturing parameters on geometric hardness, and microstructure of 316LSi stainless steel preforms.</h1>
+</div>
+<div class="container">
+
+<div class="image">
+<h3>Autor:</h3>
+<img src="Jefferson.jpg" alt="Descrição da Imagem">
+<br>
+<p id="nome">Jefferson Segundo</p>
+<br>
+<p>Pesquisador</p>
+<p>Doutor</p>
+<br>
+<p>Publicado:</p>
+<p>09/02/2024</p>
+</div>
+
+<div class="text">
+<p>
+    A revista The International Journal of Advanced Manufacturing Technology, destaca  uma revista
+     de alto impacto da editora Springer, orientada para pesquisa, focada em aplicações praticas 
+     na tecnologia avançada de manufatura e sistema. Com isso, o artigo "Effects of wire arc additive 
+     manufacturing parameters on geometric hardness, and microstructure of 316LSi stainless steel 
+     preforms" teve como analise dos efeitos dos parâmetros do processo na microestrutura.
+<br><br>
+Abstract:
+<br><br>
+A manufatura aditiva (AM) é um processo de fabricação baseado na criação de um componente camada 
+por camada, com a técnica de manufatura aditiva de arco de fio (WAAM) se estabelecendo como uma 
+alternativa promissora para a produção de peças metálicas. Entre as ligas de aço inoxidável 
+austenítico, a liga ER 316LSi é de grande interesse nas indústrias de transporte, saúde, e 
+petróleo e gás, devido às suas boas propriedades mecânicas, biocompatibilidade e alta resistência 
+à corrosão. O objetivo deste trabalho é avaliar a influência dos parâmetros do processo nas 
+características geométricas, perfil de dureza e microestrutura dos preformas metálicos de aço 
+inoxidável austenítico 316LSi obtidos por WAAM, usando a transferência de metal por curto-circuito 
+controlado (CCC) como técnica de transferência de metal. Para este propósito, sete preformas 
+metálicas foram fabricadas com diferentes parâmetros, de acordo com um design de experimentos (DoE) 
+do tipo 22 + 3. A transferência de metal via CCC resultou em um pool de solda solidificando rapidamente 
+adequado para a fabricação de preformas WAAM. Entre os parâmetros experimentais, a combinação de 
+uma velocidade de deslocamento da tocha de 300 mm/min com uma velocidade de alimentação do fio de 
+4 m/min proporcionou melhor aparência visual, com ausência de defeitos internos, acabamento de 
+superfície superior, perfil de dureza mais regular e microestrutura de grão fino.
+</p>
+<button ><a href="https://crossmark.crossref.org/dialog/?doi=10.1007/s00170-024-13240-4&domain=pdf" target="_blank" rel="noopener noreferrer">Leia na Íntegra</a></button>
+</div>
+
+</div>
+
+<!--  -->
+
+<div id="rodape">
+  <p>&copy; 2024 LabSol. Todos os direitos reservados.</p>
+</div>
+</body>
+</html>
+

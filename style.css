@@ -175,7 +175,7 @@ main.cards section.card span {
     margin-bottom: 16px;
 }
 
-main.cards section.card button {
+main.cards button {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
     border-radius: 32px;
@@ -187,35 +187,50 @@ main.cards section.card button {
     margin-bottom: 16px 0;
 }
 
-main.cards section.card button {
+main.cards button {
     background-color: var(--amarelo);
     overflow:hidden;
     transition: transform 0.3s ease;
     border:2px solid transparent;
 }
 
-main.cards section.card button a{
+main.cards button a{
     color:var(--azul);
 }
 
-main.cards section.card button:hover a{
+main.cards button:hover a{
     color:white;
 }
 
-main.cards section.card button:hover{
-    background-color:#00000000;
+main.cards button:hover{
+    background-color:var(--azul);
     border:2px solid var(--amarelo);
     transform: scale(1.2);
+}
+
+#btnews{
+    margin: 1%;
 }
 
 main.cards section.card {
     box-shadow: 30px 30px 50px -30px var(--azul);
 }
 /*____________________________________*/
+
+#titulo{
+    margin-top:-6%;
+      /* background-color: #203288; */
+      background: linear-gradient(to bottom, #20328800 0%, #203288 11%, #203288 95%, #f0f0f0 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:white;
+      padding:2%;
+}
 .presentation-section {
     margin-top:-6%;
       /* background-color: #203288; */
-      background: linear-gradient(to bottom, #20328800 0%, #203288 11%, #203288 99%, #f0f0f0 100%);
+      background: linear-gradient(to bottom, #20328800 5%, #203288 11%, #203288 99%, #f0f0f0 100%);
       display: flex;
       align-items: center;
     }
@@ -369,7 +384,7 @@ footer p {
         margin-bottom: 0;
     }
 
-    main.cards section.card button {
+    main.cards button {
         font-size: 70%;
     }
 
