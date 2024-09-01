@@ -4,6 +4,8 @@
     --color-neutral-10:#171717;
     --color-neutral-30:#a8a29e;
     --color-neutral-40: #f5f5f5;
+    --azul:#203288;
+    --amarelo:#f6b800;
 }
 html{
     scroll-behavior:smooth;
@@ -12,14 +14,15 @@ body {
 	font-family: 'Inter', sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #f0f0f0;
+	/* background-color: #f0f0f0; */
+    background-color: var(--azul);
 
 }
 
 /*____________________________________*/
 
 header {
-	background-color: #fff;
+	background-color: var(--azul);
 	color: #fff;
 	padding: 2px;
 }
@@ -42,16 +45,19 @@ nav li {
 
 nav a {
 	display: block;
-	color: #777;
+	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-weight: bold;
+    overflow:hidden;
+    transition: transform 0.3s ease;
 }
 
 nav a:hover {
 	/*background-color: #ddd;*/
-	color: #333;
+	color: var(--amarelo);
+    transform: scale(1.2);
 }
 
 /*____________________________________*/
@@ -86,11 +92,22 @@ nav a:hover {
     border: none;
 	border-radius: 4px;
 	cursor: pointer;
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    border:2px solid transparent;
 }
 
 #banner button:hover {
-	background-color: #f6b900e5;
+    transform: scale(1.2);
+    border: 2px solid var(--amarelo);
+    background-color: var(--azul);  
 }
+
+#banner button:hover .arrow-button {
+    background-color: #00000000; 
+    border-top:5px solid #f6b800;  
+}
+
 /*____________________________________*/
   .arrow-button {
       width: 0;
@@ -99,6 +116,7 @@ nav a:hover {
       border-right: 5px solid transparent;
       border-top: 5px solid black;
       cursor: pointer;
+      
     }
 /*____________________________________*/
 
@@ -107,6 +125,9 @@ main.cards {
     justify-content: center;
 	align-items: center;
     padding: 80px 0px 80px 0px;
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+        url('./Fundo.png');
 }
 
 main.cards section.card {
@@ -114,11 +135,19 @@ main.cards section.card {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: white;
+    background: var(--azul);
     padding: 1rem 1.5rem;
     border-radius: 8px;
     max-height: 468px;
     margin-left: 32px;
+}
+
+main.cards section.card h3{
+    color:white;
+}
+
+main.cards section.card span{
+    color: white;
 }
 
 main.cards section.card:first-child {
@@ -159,11 +188,28 @@ main.cards section.card button {
 }
 
 main.cards section.card button {
-    background: linear-gradient(to right, #3b60d8, #4895ec);
+    background-color: var(--amarelo);
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    border:2px solid transparent;
+}
+
+main.cards section.card button a{
+    color:var(--azul);
+}
+
+main.cards section.card button:hover a{
+    color:white;
+}
+
+main.cards section.card button:hover{
+    background-color:#00000000;
+    border:2px solid var(--amarelo);
+    transform: scale(1.2);
 }
 
 main.cards section.card {
-    box-shadow: 20px 20px 50px -30px #966add;
+    box-shadow: 30px 30px 50px -30px var(--azul);
 }
 /*____________________________________*/
 .presentation-section {
@@ -206,9 +252,20 @@ main.cards section.card {
     border: none;
 	border-radius: 4px;
 	cursor: pointer;
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    border:2px solid transparent;
 }
+
 .presentation-content button:hover{
-    background-color: #f6b900f1;
+    transform: scale(1.2);
+    border:2px solid #f6b800;
+    background-color: #203288;
+}
+
+.presentation-content button:hover a{
+    color:#f6b800;
+    
 }
 
 .presentation-content a{
@@ -221,16 +278,21 @@ main.cards section.card {
     background: linear-gradient(to bottom, #7e7e7e, #404047, #37373f, #29292e);
     padding: 0px;
   }
-#parceiros {
+
+#Parceiros h1{
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    background-color: white;
 }
+
 #Parceiros h1{
     text-align: center;
+    color:white;
 }
+
 #Parceiros .parceiros {
+    background-color: #f0f0f0;
+    padding:20px;
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;/*quebra a linha quando não cabe o elemento*/
@@ -341,3 +403,7 @@ footer p {
     }
 
 
+
+    /* Usa @media e define um tamanho de tela para fazer o site adaptado para celular e outros tamanhos de tela */
+@media (max-width:768px){
+}
