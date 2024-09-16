@@ -25,6 +25,11 @@ header {
 	background-color: var(--azul);
 	color: #fff;
 	padding: 2px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    border-bottom: 2px solid #f0f0f0;
 }
 a {
 	text-decoration: none;
@@ -32,7 +37,9 @@ a {
 
 /*____________________________________*/
 
-nav ul {
+#menuprincipal {
+    display:flex;
+    justify-content: flex-end;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -59,6 +66,48 @@ nav a:hover {
 	color: var(--amarelo);
     transform: scale(1.2);
 }
+
+.menu-item {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-weight: bold;
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+
+  .menu-item:hover {
+    color: var(--amarelo);
+    transform: scale(1.2);
+  }
+
+  .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Submenu é posicionado absolutamente em relação ao item pai */
+    top: 100%; /* Posiciona o submenu logo abaixo do item pai */
+    left: 0;   /* Alinha o submenu à esquerda do item pai */
+    background-color: #444;
+    display: none; /* Inicialmente escondido */
+    min-width: 150px; /* Define uma largura mínima para o submenu */
+    z-index: 1; /* Garante que o submenu apareça acima de outros elementos */
+  }
+
+  .menu-item:hover .submenu {
+    display: block; /* Exibe o submenu quando o item do menu é hover */
+  }
+  
+  .submenu li {
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .submenu li:hover {
+    background-color: #666;
+  }
 
 /*____________________________________*/
 #banner {
@@ -109,6 +158,13 @@ nav a:hover {
 }
 
 /*____________________________________*/
+#divbtup{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
   .arrow-button {
       width: 0;
       height: 0;
@@ -118,9 +174,66 @@ nav a:hover {
       cursor: pointer;
       
     }
+
+    .arrow-button-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;  /* Borda esquerda transparente */
+    border-right: 5px solid transparent; /* Borda direita transparente */
+    border-bottom: 5px solid black;      /* Borda inferior com cor preta */
+    cursor: pointer;                     /* Cursor muda para ponteiro */
+}
+
+#btbanner button{
+    background-color: #f6b800;
+	color: #000;
+	font-size: 18px;
+	padding: 10px 30px;
+    margin-top: 40px;
+    border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    overflow:hidden;
+    transition: transform 0.3s ease;
+    border:2px solid transparent;
+    
+}
+
+
+#btbanner button:hover{
+    transform: scale(1.2);
+    border: 2px solid var(--amarelo);
+    background-color: var(--azul);
+    
+}
+
+#btbanner button:hover .arrow-button-up{
+    transform: scale(1.2);
+    border-bottom: 5px solid var(--amarelo);
+    background-color: var(--azul);
+    
+}
+
 /*____________________________________*/
 
-main.cards {
+#servicos{
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+        url('./Fundo.png');
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#servicos h1{
+    margin:0 auto;
+    padding:10px 20px;
+    width:fit-content;
+    background-color: var(--azul);
+    color:white;
+    border-radius:10px; 
+}
+
+#newscard {
     display: flex;
     justify-content: center;
 	align-items: center;
@@ -128,6 +241,13 @@ main.cards {
     background: 
         linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
         url('./Fundo.png');
+}
+
+#servcard{
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    padding: 80px 0px 80px 0px;
 }
 
 main.cards section.card {
@@ -293,6 +413,8 @@ main.cards section.card {
     background: linear-gradient(to bottom, #7e7e7e, #404047, #37373f, #29292e);
     padding: 0px;
   }
+
+
 
 #Parceiros h1{
     padding-top: 10px;

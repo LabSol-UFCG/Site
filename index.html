@@ -10,8 +10,16 @@
 <body>
 	<header>
 		<nav>
-			<ul>
+			<ul id="menuprincipal">
+                <li><a href="#servicos">Serviços</a></li>
 				<li><a href="OrdemDeServicoLabSol.docx" download="OrdemDeServicoLabSol">Reservar Maquina</a></li>
+
+                <!-- <li class="menu-item">Trabalhos Científicos<ul class="submenu">
+                    <li><a href="contato.html">Artigos de Eventos</a></li>
+				    <li><a href="noticias.html">Artigos de Revistas</a></li>
+                    <li><a href="noticias.html">Trabalhos de Conclusão de Cursos</a></li>
+                </ul></li> -->
+                
 				<li><a href="contato.html">Contato</a></li>
 				<li><a href="noticias.html">Notícias</a></li>
 			</ul>
@@ -25,13 +33,22 @@
         <a href="#apresentacao"><button><div class="arrow-button"></div></button></a>
 	</section>
 
-    <div class="transicao">
-    </div>
     <!-- Área de notícias -->
     <div id="titulo">
         <h1>Notícias</h1>
 	</div>
-    <main class="cards">
+
+    <main class="cards" id="newscard">
+
+        <section class="card">
+            <!-- <div class="icon">
+                <img src="projeto3.png" alt="Sensor.">
+            </div> -->
+            <h3>Labsol participa de workshop promovido pelo PETMEC-CG</h3>
+            <span>15/09/2024</span>
+            <button ><a href="noticia5.html" rel="noopener noreferrer">Saiba Mais</a></button>
+        </section>
+
         <section class="card">
             <!-- <div class="icon">
                 <img src="projeto1.png" alt="Solda.">
@@ -40,6 +57,7 @@
             <span>16/08/2024</span>
             <button ><a href="noticia3.html" rel="noopener noreferrer">Saiba Mais</a></button>
         </section>
+
         <section class="card">
             <!-- <div class="icon">
                 <img src="projeto2.png" alt="Mada.">
@@ -48,14 +66,7 @@
             <span>09/08/2024</span>
             <button ><a href="noticia2.html" rel="noopener noreferrer">Saiba Mais</a></button>
         </section>
-        <section class="card">
-            <!-- <div class="icon">
-                <img src="projeto3.png" alt="Sensor.">
-            </div> -->
-            <h3>Resultado da homologação das inscrições</h3>
-            <span>06/08/2024</span>
-            <button ><a href="noticia1.html" rel="noopener noreferrer">Saiba Mais</a></button>
-        </section>
+
         <button id="btnews"><a href="noticias.html" rel="noopener noreferrer">Mais Notícias</a></button>
     </main>
     <!--  -->
@@ -74,9 +85,10 @@
                 </button>
 			</div>
 	</div>
-	<div class="transicao">
-    </div>
-	<main class="cards">
+	
+    <div id="servicos">
+        <h1>Serviços</h1>
+	<main class="cards" id="servcard">
         <section class="card">
             <div class="icon">
                 <img src="projeto1.png" alt="Solda.">
@@ -103,8 +115,10 @@
             <button ><a href="sensoriamento.html" rel="noopener noreferrer">Saiba Mais</a></button>
         </section>
     </main>
-    <div class="transicao">
-    </div>
+    <div id="divbtup"><a id="btbanner" href="#banner"><button><div class="arrow-button-up"></div></button></a></div>
+    
+</div>
+
 	<section id="Parceiros">
         <h1>Parceiros</h1>
         <div class="parceiros">
