@@ -144,6 +144,19 @@ nav a:hover {
     font-size: 17px;
     color: white;
 }
+
+.esquerda{
+    overflow: hidden;
+}
+.esquerda a{
+    text-decoration: none;
+    transition:transform 0.3s ease;
+}
+
+.esquerda a:hover{
+    transform: scale(1.2);
+}
+
 .contact-info .direita{
     margin: 50px;
     width: 50%;
