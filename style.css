@@ -25,10 +25,9 @@ header {
 	background-color: var(--azul);
 	color: #fff;
 	padding: 2px;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
+    position: -webkit-sticky; /* Para suporte em navegadores mais antigos */
+    position: sticky;
+    top: 0;
     border-bottom: 2px solid #f0f0f0;
 }
 a {
@@ -37,6 +36,24 @@ a {
 
 /*____________________________________*/
 
+#contato{
+    padding: 10px;
+    color:white;
+    display:flex;
+    justify-content: flex-end;
+    gap:10px;
+    text-decoration: none;
+    overflow:hidden;
+}
+
+#contato a{
+    color:white;
+    transition:transform 0.3s ease;
+}
+
+#contato a:hover{
+    transform:scale(1.2);
+}
 #menuprincipal {
     display:flex;
     justify-content: flex-end;
