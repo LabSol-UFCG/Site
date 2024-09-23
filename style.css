@@ -6,6 +6,7 @@
     --color-neutral-40: #f5f5f5;
     --azul:#203288;
     --amarelo:#f6b800;
+    --escala:0.6;
 }
 html{
     scroll-behavior:smooth;
@@ -495,8 +496,78 @@ footer p {
 
 @media (max-width: 767px) {
 	header {
-		padding: 10px;
+		padding: 0px;
+        font-size:75%;
 	}
+
+    header a{
+        background-color: purple;
+    }
+    #menuprincipal li{
+        padding:0;
+        margin:0;
+        
+    }
+
+    #menuprincipal{
+        gap:10px;
+        justify-content: center;
+    }
+
+    #Parceiros{
+        padding:0px;
+    }
+    #Parceiros .parceiros{
+        
+     padding:0px;
+     padding-top:10px;
+     gap:5px;
+     margin:0;
+     justify-content: center;
+    }
+
+    #Parceiros .parceiros img{
+        margin:0;
+    }
+
+    #Parceiros .parceiros div{
+        padding:0;
+        margin:0;
+        
+    }
+
+    #Parceiros .parceiros .uaem img{
+ 
+        width: calc(180px * var(--escala));
+        height: calc(80px * var(--escala));
+    }
+    #Parceiros .parceiros .lvi img{
+    
+        width: calc(180px * var(--escala));
+        height: calc(90px * var(--escala));
+    }
+    #Parceiros .parceiros .soldamat img{
+    
+        width: calc(150px * var(--escala));
+        height: calc(70px * var(--escala));
+    }
+    #Parceiros .parceiros .UFPE img{
+        width: calc(60px * var(--escala));
+        height: calc(100px * var(--escala));
+    }
+    #Parceiros .parceiros .cnpq img{
+    
+        width: calc(165x * var(--escala));
+        height: calc(65px * var(--escala));
+    }
+    #Parceiros .parceiros .fapesq img{
+        width: calc(180px * var(--escala));
+        height: calc(80px * var(--escala));
+    }
+
+    #menuprincipal a{
+        padding:0;
+    }
 
 	nav li {
 		float: none;
