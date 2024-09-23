@@ -17,7 +17,7 @@ body {
 	padding: 0;
 	/* background-color: #f0f0f0; */
     background-color: var(--azul);
-
+    width:100%;
 }
 
 /*____________________________________*/
@@ -30,6 +30,7 @@ header {
     position: sticky;
     top: 0;
     border-bottom: 2px solid #f0f0f0;
+    
 }
 a {
 	text-decoration: none;
@@ -45,6 +46,7 @@ a {
     gap:10px;
     text-decoration: none;
     overflow:hidden;
+    
 }
 
 #contato a{
@@ -65,7 +67,7 @@ a {
 }
 
 nav li {
-	float: right;
+	/* float: right; */
 }
 
 nav a {
@@ -179,8 +181,10 @@ nav a:hover {
 #divbtup{
     width:100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding:20px;
+    box-sizing:border-box;
 
 }
   .arrow-button {
@@ -256,9 +260,22 @@ nav a:hover {
     justify-content: center;
 	align-items: center;
     padding: 80px 0px 80px 0px;
+    
+}
+
+#secaonoticias{
+    display:flex;
+    flex-direction:column;
     background: 
         linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
         url('./Fundo.png');
+        align-items: center;
+    padding-bottom: 20px;
+}
+
+#secaonoticias button{
+    width:fit-content;
+    
 }
 
 #servcard{
@@ -366,7 +383,7 @@ main.cards section.card {
       padding:2%;
 }
 .presentation-section {
-    margin-top:-6%;
+    
       /* background-color: #203288; */
       background: linear-gradient(to bottom, #20328800 5%, #203288 11%, #203288 99%, #f0f0f0 100%);
       display: flex;
@@ -577,6 +594,8 @@ footer p {
 	#banner {
 		padding: 50px 0;
 	}
+
+    
 }
 @media screen and (max-width: 720px) {
     main.cards {
