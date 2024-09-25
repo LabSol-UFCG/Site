@@ -527,6 +527,8 @@ footer p {
     #menuprincipal{
         gap:10px;
         justify-content: center;
+        padding-top:20px;
+        padding-bottom:20px;
     }
 
     #Parceiros{
@@ -582,6 +584,12 @@ footer p {
 
     #menuprincipal a{
         padding:0;
+    }
+
+    #newscard{
+        display:flex;
+        flex-direction: column;
+        max-width:80%;
     }
 
 	nav li {
